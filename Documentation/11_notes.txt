@@ -1,0 +1,513 @@
+DAY 11 DOCUMENTATION NOTES
+Project Title
+
+Retail Customer Analytics and Business Intelligence Dashboard
+
+Phase
+
+Day 11 – Power BI Dashboard Development and Business Intelligence Reporting
+_________________________________________________________________________________
+
+Analysis 1: Dashboard Data Integration
+Objective:
+
+Import analytical outputs into Power BI for dashboard creation.
+
+Method :
+
+Imported the following datasets:
+
+country_contribution.csv
+country_rankings.csv
+product_rankings.csv
+customer_rankings.csv
+running_revenue.csv
+rfm_table.csv
+final_clv_table.csv
+
+using:
+Home → Get Data → Text/CSV
+Result :
+
+All datasets loaded successfully.
+
+Interpretation :
+
+Power BI became the centralized reporting platform.
+
+Business Insight :
+
+Business users can access multiple analytical outputs in a single dashboard.
+
+Conclusion :
+
+Data integration completed successfully.
+
+__________________________________________________________________________________________________________________________________________________
+
+Analysis 2: Revenue KPI Analysis
+Objective
+
+Measure overall business revenue.
+
+Method
+
+Created:
+
+🔢 Card Visual
+
+Field:
+
+Revenue
+
+Aggregation:
+
+Sum
+Result
+Total Revenue = 17.37 Million
+Interpretation :
+
+The company generated substantial revenue from retail transactions.
+
+Business Insight :
+
+Revenue serves as the primary indicator of business performance.
+
+Conclusion :
+
+Revenue KPI created successfully
+__________________________________________________________________________________________________________________________________________________
+
+Analysis 3: Customer KPI Analysis
+Objective
+
+Measure total customer base.
+
+Method
+
+Created:
+
+🔢 Card Visual
+
+Field:
+
+Customer ID
+
+Aggregation:
+Distinct Count
+Result
+Total Customers = 5878
+Interpretation :
+
+Thousands of customers contributed to business revenue.
+
+Business Insight :
+
+Customer count reflects customer acquisition performance.
+
+Conclusion :
+
+Customer KPI created successfully
+
+__________________________________________________________________________________________________________________________________________________
+
+Analysis 4: Product KPI Analysis
+Objective
+
+Measure product diversity.
+
+Method
+
+Created:
+
+🔢 Card Visual
+
+Field:
+
+Description
+
+Aggregation:
+Count
+Result
+Total Products = 5267
+Interpretation :
+
+The company offers a large product portfolio.
+
+Business Insight :
+
+Product diversity increases revenue opportunities.
+
+Conclusion :
+
+Product KPI created successfully
+
+__________________________________________________________________________________________________________________________________________________
+
+Analysis 5: Top Country Analysis
+Objective
+
+Identify the country generating maximum revenue.
+
+Method
+
+Used:
+
+country_rankings.csv
+
+Created:
+
+🔢 Card Visual
+
+Filter:
+
+Rank = 1
+Result
+United Kingdom
+Interpretation :
+
+United Kingdom contributes the highest revenue.
+
+Business Insight :
+
+The UK market is the company's strongest revenue source.
+
+Conclusion :
+
+Top Country KPI created successfully
+
+____________________________________________________________________________
+
+Analysis 6: Country Revenue Contribution Analysis
+Objective
+
+Measure country-wise contribution to total revenue.
+
+Method
+
+Visual Used:
+
+📊 Clustered Bar Chart
+
+Dataset:
+
+country_contribution.csv
+
+Fields:
+
+Country
+Contribution_Percent
+Results
+United Kingdom = 82.82%
+
+EIRE = 3.55%
+
+Netherlands = 3.19%
+
+Germany = 2.45%
+
+France = 2.01%
+Interpretation :
+
+Revenue is heavily concentrated in a few countries.
+
+Business Insight :
+
+Business risk increases when revenue depends heavily on a single market.
+
+Conclusion :
+
+Country contribution analysis completed successfully.
+
+____________________________________________________________________________
+
+Analysis 7: Running Revenue Trend Analysis
+Objective 
+
+Analyze revenue growth over time.
+
+Method
+
+Visual Used:
+
+📈 Line Chart
+
+Dataset:
+
+running_revenue.csv
+
+Fields:
+
+Month
+Running_Revenue
+Result
+
+Revenue increased steadily throughout the period.
+
+Interpretation :
+
+The business maintained positive growth.
+
+Business Insight :
+
+Stable growth indicates healthy business performance.
+
+Conclusion :
+
+Revenue trend analysis completed successfully.
+
+____________________________________________________________________________
+
+Analysis 8: Product Performance Analysis
+Objective
+
+Identify top-performing products.
+
+Method
+
+Visual Used:
+
+📊 Clustered Column Chart
+
+Dataset:
+
+product_rankings.csv
+
+Filter:
+
+Top 10 Products
+Result
+
+Top Product:
+
+REGENCY CAKESTAND 3 TIER
+
+Revenue:
+
+277,656.25
+Interpretation :
+
+A small number of products contribute a large portion of revenue.
+
+Business Insight :
+
+High-performing products should receive inventory priority.
+
+Conclusion :
+
+Product analysis completed successfully.
+
+
+____________________________________________________________________________
+
+Analysis 9: Customer Revenue Analysis
+Objective
+
+Identify highest-value customers.
+
+Method
+
+Visual Used:
+
+📊 Clustered Bar Chart
+
+Dataset:
+
+customer_rankings.csv
+
+Filter:
+
+Top 10 Customers
+Result
+
+Highest Revenue Customer:
+
+Customer 18102
+Interpretation : 
+
+A small number of customers generate significant revenue.
+
+Business Insight :
+
+High-value customers should receive retention incentives.
+
+Conclusion :
+
+Customer revenue analysis completed successfully
+
+____________________________________________________________________________
+
+
+Analysis 10: Customer Segmentation (RFM)
+Objective
+
+Segment customers according to purchasing behavior.
+
+Method
+
+Visual Used:
+
+🥧 Pie Chart
+
+Dataset:
+
+rfm_table.csv
+
+Field:
+
+Segment
+Results
+Regular = 4126
+
+VIP = 1297
+
+At Risk = 455
+Interpretation :
+
+Most customers belong to the Regular category.
+
+Business Insight :
+
+VIP customers require retention strategies while At Risk customers require re-engagement campaigns.
+
+Conclusion :
+
+RFM segmentation analysis completed successfully.
+
+__________________________________________________________________________________________________________________________________________________
+
+Analysis 11: Customer Lifetime Value (CLV)
+Objective
+
+Identify customers with highest long-term value.
+
+Method
+
+Visual Used:
+
+📊 Clustered Bar Chart
+
+Dataset:
+
+final_clv_table.csv
+
+Filter:
+
+Top 20 Customers
+Result
+
+Top CLV customers identified successfully.
+
+ Interpretation :
+
+A limited number of customers generate substantial lifetime value.
+
+Business Insight :
+
+CLV helps allocate marketing budgets efficiently.
+
+Conclusion :
+
+CLV analysis completed successfully.
+
+____________________________________________________________________________
+
+Analysis 12: Dashboard Summary
+Objective
+
+Summarize business insights from all analyses.
+
+Key Findings
+Total Revenue = 17.37 Million
+
+Total Customers = 5878
+
+Total Products = 5267
+
+Top Country = United Kingdom
+
+United Kingdom contributes 82.82% of total revenue
+
+Customer 18102 is the highest revenue customer
+
+REGENCY CAKESTAND 3 TIER is the highest revenue product
+
+Regular Customers = 4126
+
+VIP Customers = 1297
+
+At Risk Customers = 455
+_________________
+Revenue shows a positive growth trend
+Business Insight 1
+
+Revenue is highly concentrated in the United Kingdom market.
+
+Business Insight 2
+
+A small number of customers contribute a significant portion of revenue.
+
+Business Insight 3
+
+A small number of products drive most business revenue.
+
+Business Insight 4
+
+Customer segmentation can improve marketing effectiveness.
+
+Business Insight 5
+
+Customer Lifetime Value enables long-term customer prioritization.
+__________________
+Deliverables Generated
+
+Retail_Analytics_Dashboard.pbix
+
+Revenue KPI
+
+Customer KPI
+
+Product KPI
+
+Top Country KPI
+
+Country Contribution Chart
+
+Running Revenue Trend
+
+Top Products Chart
+
+Top Customers Chart
+
+Customer Segmentation Chart
+Top CLV Customers Chart
+______________________________
+Skills Demonstrated :
+
+Power BI Dashboard Development
+
+Business Intelligence
+
+Data Visualization
+
+KPI Design
+
+Revenue Analytics
+
+Customer Analytics
+
+Product Analytics
+
+Country Analytics
+
+RFM Segmentation
+
+Customer Lifetime Value Analysis
+
+Business Reporting
+
+Conclusion :
+
+Day 11 successfully converted Python and SQL analytical outputs into an interactive Business Intelligence dashboard. 
+The dashboard provides a comprehensive view of revenue, customers, products, countries, customer segments, and customer lifetime value, enabling effective data-driven decision-making.
+

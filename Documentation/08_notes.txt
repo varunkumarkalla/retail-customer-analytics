@@ -1,0 +1,282 @@
+ANALYSIS 1: – Dataset Loading
+Objective :
+Load the cleaned retail dataset for customer segmentation analysis.
+
+Method :
+The clean_retail.csv dataset was loaded into a Pandas DataFrame.
+
+Code Used :
+sales_df = pd.read_csv("../Dataset/clean_retail.csv")
+
+Result :
+Dataset successfully loaded into memory.
+
+Conclusion :
+The dataset is ready for RFM analysis.
+_____________________________________________________________________
+
+ANALYSIS 2 – Snapshot Date Creation
+Objective :
+Create a reference date for calculating customer recency.
+
+Method:
+The latest transaction date in the dataset was identified and one day was added to create a snapshot date.
+
+Purpose:
+The snapshot date acts as the reference point for measuring how recently customers made purchases.
+
+Interpretation:
+Customers with smaller recency values are more active than customers with larger recency values.
+
+Conclusion:
+The snapshot date was successfully established for recency calculations.
+______________________________________________________________________________
+
+ANALYSIS 3 – Recency Calculation
+Objective:
+Measure how recently each customer made a purchase.
+
+Method:
+The most recent transaction date for each customer was identified and compared against the snapshot Date
+
+Result:
+
+Recency values were calculated for all customers.
+
+Interpretation:
+
+Low Recency Value:
+
+Customer purchased recently.
+
+High Recency Value:
+
+Customer has not purchased for a long time.
+
+Business Insight:
+
+Recently active customers are more likely to respond positively to marketing campaigns and future promotions.
+
+Conclusion:
+
+Recency values were successfully calculated for all customers.
+________________________________________________________________________________________
+
+ANALYSIS 4 – Frequency Calculation
+Objective :
+Measure how often customers make purchases.
+
+Result:
+
+Frequency values calculated.
+
+Interpretation:
+
+Higher frequency indicates loyal customers.
+
+Lower frequency indicates occasional buyers.
+
+Business Insight :
+
+Frequent customers generate recurring revenue.
+
+Conclusion :
+
+Customer frequency successfully calculated.
+___________________________________________________________________________________
+
+Analysis 5 – Monetary Calculation
+Objective:
+Calculate customer spending.
+
+RESULT:
+Monetary values calculated.
+
+Interpretation:
+
+Higher monetary values indicate higher-value customers.
+
+Business Insight:
+
+Revenue concentration can be identified through spending analysis.
+
+Conclusion :
+
+Monetary values successfully calculated.
+
+Monetary values calculated.
+
+Interpretation :
+
+Higher monetary values indicate higher-value customers.
+
+Business Insight :
+
+Revenue concentration can be identified through spending analysis.
+
+Conclusion :
+
+Monetary values successfully calculated.
+________________________________________________________________________________________
+
+Analysis 6 – RFM Table Creation
+Objective:
+Combine Recency, Frequency, and Monetary metrics.
+
+Interpretation :
+
+The RFM table provides a complete customer profile.
+
+Business Insight :
+
+All customer segmentation is based on this table.
+
+Conclusion :
+
+RFM table successfully created.
+______________________________________________________________________________
+Analysis 7 – RFM Score Calculation
+Objective :
+Assign customer scores.
+
+Result :
+R_Score created
+F_Score created
+M_Score created
+RFM_Score created
+
+Example:
+555
+Meaning:
+Recent Customer
+Frequent Customer
+High Spending Customer
+
+Interpretation :
+Higher scores indicate higher-value customers.
+
+Conclusion :
+RFM scoring completed successfully.
+___________________________________________________________________________________
+
+Analysis 8 – Customer Segmentation
+Objective :
+
+Classify customers into business segments.
+
+Results :
+
+VIP Customers = 60
+
+At Risk Customers = 2,519
+
+Regular Customers = 3,299
+
+Total Customers = 5,878
+
+Interpretation :
+
+Most customers belong to the Regular segment.
+
+Only a small percentage qualify as VIP customers.
+
+Business Insight :
+
+Different customer groups require different marketing strategies.
+
+Conclusion :
+
+Customer segmentation completed successfully.
+
+________________________________________________________________________________________
+
+Analysis 9 – Customer Segment Visualization
+Objective :
+Visualize customer segment distribution.
+
+Output Generated :
+Images/rfm_segments.png
+Results :
+
+Regular = 3,299
+
+At Risk = 2,519
+
+VIP = 60
+
+Interpretation :
+
+The customer base is dominated by Regular customers.
+
+Business Insight :
+
+A significant number of customers are at risk of churn.
+
+Conclusion :
+
+Customer segment distribution successfully visualized.
+____________________________________________________________________________________
+
+Analysis 10 – Top VIP Customers
+Objective :
+
+Identify the highest-value customers.
+
+Output Files :
+Dataset/top_vip_customers.csv
+
+Images/top_vip_customers.png
+Top Customer
+
+Customer 18102
+
+Revenue = 580,987.04
+
+Interpretation :
+
+VIP customers generate a disproportionately large share of revenue.
+
+Business Insight :
+
+Retention of VIP customers should be a top business priority.
+
+Conclusion :
+
+Top VIP customers successfully identified.
+______________________________________________________________________________________________________________
+
+Day 8 Final Summary
+
+Total Customers = 5,878
+
+VIP Customers = 60
+
+At Risk Customers = 2,519
+
+Regular Customers = 3,299
+
+VIP Percentage = 1.02%
+
+Key Business Findings
+
+✓ Customer segmentation completed
+
+✓ VIP customers represent only 1.02% of customers
+
+✓ VIP customers contribute significantly to revenue
+
+✓ At Risk customers require retention efforts
+
+✓ Regular customers represent future growth opportunities
+
+Deliverables Generated
+
+✓ Dataset/rfm_table.csv
+
+✓ Dataset/top_vip_customers.csv
+
+✓ Images/rfm_segments.png
+
+✓ Images/top_vip_customers.png
+
+__________________________________________________________________________________________________________

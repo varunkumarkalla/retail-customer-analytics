@@ -1,0 +1,229 @@
+
+
+Revenue Summary Statistics
+
+Objective:
+Understand transaction-level revenue behavior.
+
+Method:
+Used describe() function.
+
+Metrics Evaluated:
+Count
+Mean
+Standard Deviation
+Minimum
+Maximum
+Quartiles
+
+Business Benefit:
+Provides a high-level understanding
+of transaction revenue distribution.
+
+count    779425.000000
+mean         22.291823
+std         227.427075
+min           0.001000
+25%           4.950000
+50%          12.480000
+75%          19.800000
+max      168469.600000
+Name: Revenue, dtype: float64
+
+_______________________________________
+ANALYSIS 3: MEAN
+What is the average revenue
+per transaction : np.float64(22.291823161946304)
+
+Mean Revenue Analysis
+
+Definition:
+Average revenue generated per transaction.
+
+Formula:
+Sum of Revenue / Number of Transactions
+
+Business Use:
+Used as baseline performance indicator
+_______________________________________
+ANALYSIS 4: MEDIAN
+
+What is the typical transaction value:
+
+np.float64(12.48)
+
+Median Revenue Analysis
+
+Definition:
+Middle transaction value.
+
+Business Importance:
+Less affected by extreme transactions.
+
+Provides a realistic view of customer spending behavior.
+
+_______________________________________
+ANALYSIS 5: mode
+Which revenue value occurs most often:
+0    15.0
+Name: Revenue, dtype: float64
+
+Mode Revenue Analysis
+
+Definition:
+Most frequently occurring revenue value.
+
+Business Importance:
+Represents the most common transaction amount.
+_______________________________________
+
+ANALYSIS 6: variance
+
+How spread out is revenue:
+np.float64(12.48)
+
+Variance Analysis
+
+Definition:
+Measures variability in revenue.
+
+Interpretation:
+Higher variance indicates larger differences
+between transactions.
+_______________________________________
+ANALYSIS 7: STANDARD DEVIATION
+
+Business Question
+How much does revenue vary
+around the average:
+np.float64(227.427075483571)
+
+Standard Deviation Analysis
+
+Definition:
+Measures average distance from mean.
+
+Business Importance:
+Indicates revenue consistency.
+_______________________________________
+
+ANALYSIS 8: REVENUE DISTRIBUTION
+Business Question
+How is revenue distributed?
+Revenue Distribution Analysis
+
+Objective:
+Visualize transaction revenue behavior.
+
+Observation:
+Distribution shape helps identify
+normality and skewness.
+
+Output:
+revenue_distribution.png
+_______________________________________
+
+ANALYSIS 9: BOXPLOT
+Business Question
+Are there outliers:
+
+Outlier Analysis
+
+Objective: Identify unusual revenue transactions.
+
+Method:
+Boxplot Visualization.
+
+Business Importance:
+Outliers may indicate
+Large Orders
+Corporate Purchases
+Data Entry Errors
+
+Output:
+revenue_outliers.png
+_______________________________________
+
+ANALYSIS 10 :SKEWNESS
+Business Question
+Is revenue symmetric: np.float64(579.574978412187)
+
+
+Interpretation
+0 = Normal
+
+Positive = Right Skew (*)
+
+Negative = Left Skew
+
+Skewness Analysis
+
+Purpose:
+Measure asymmetry in revenue distribution.
+
+Interpretation:
+Positive skew indicates a small number
+of very large transactions.
+_______________________________________
+
+ANALYSIS 11 : KURTOSIS
+Business Question
+How heavy are the tails?
+np.float64(404279.97067849094)
+
+Kurtosis Analysis
+
+Purpose:
+Measure concentration of extreme values.
+
+Interpretation:
+High kurtosis suggests more outliers.
+_______________________________________
+
+ANALYSIS 12
+CORRELATION
+Business Question
+Does Quantity affect Revenue?
+
+Correlation Analysis
+
+Objective:
+Understand relationships between
+Quantity, Price, and Revenue.
+
+Business Benefit:
+Helps identify drivers of revenue.
+
+Output:
+correlation_matrix.png
+_______________________________________
+
+DAY 4 DELIVERABLES
+
+Images folder should contain:
+
+revenue_distribution.png
+
+revenue_outliers.png
+
+correlation_matrix.png
+
+Notebook:
+
+04_Statistics.ipynb
+INTERVIEW QUESTIONS AFTER DAY 4
+
+You can now answer:
+
+What is mean vs median?
+Why use median instead of mean?
+What is standard deviation?
+What is variance?
+What are outliers?
+What is skewness?
+What is kurtosis?
+How do you analyze distribution?
+What is correlation?
+How does Quantity impact Revenue?
+________________________________________
+

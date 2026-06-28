@@ -1,0 +1,28 @@
+A/B Testing Analysis
+
+Objective:
+Evaluate whether the new version
+(Group B) performs better than
+the existing version (Group A).
+
+Groups:
+
+A = Control
+
+B = Treatment
+
+Metric:
+Revenue
+
+T-Test Result:
+
+Statistic: -1.3379255602693625
+
+P-value:  0.18092135874295664
+
+Revenue Lift: 3.14%
+
+Decision: not significant
+
+Business Recommendation:
+________

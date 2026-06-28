@@ -1,0 +1,452 @@
+ANALYSIS 1 – Database Connection
+
+Objective:
+
+Connect Python to SQLite database.
+
+Method:
+
+SQLite connection established using retail.db.
+
+Result:
+
+Database connection successful.
+
+Interpretation:
+
+The retail_sales table is available for advanced SQL analysis.
+
+Conclusion:
+
+Database connection completed successfully.
+___________________________________________________________________________
+
+ANALYSIS 2 – Customer Ranking
+
+Objective:
+
+Rank customers according to revenue generated.
+
+Method:
+
+SQL RANK() window function was used.
+
+Output:
+
+customer_rankings.csv
+
+Interpretation:
+
+Customers with rank 1 generate the highest revenue.
+
+Business Insight:
+
+High-ranking customers should be prioritized for retention.
+
+Conclusion:
+
+Customer ranking completed successfully.
+
+_______________________________________________________________________________
+
+ANALYSIS 3 – Product Ranking
+
+Objective:
+
+Rank products according to revenue.
+
+Method:
+
+SQL RANK() window function.
+
+Output:
+
+product_rankings.csv
+
+Business Insight:
+
+Top-ranked products drive business revenue.
+
+Conclusion:
+
+Product ranking completed successfully.
+
+____________________________________________________________________________________
+
+ANALYSIS 4 – Country Ranking
+
+Objective:
+
+Rank countries according to revenue contribution.
+
+Method:
+
+SQL RANK() window function.
+
+Output:
+
+country_rankings.csv
+
+Business Insight:
+
+Country ranking helps identify key markets.
+
+Conclusion:
+
+Country ranking completed successfully.
+
+_______________________________________________________________________________________
+
+
+ANALYSIS 5 – Running Revenue
+
+Objective:
+
+Track cumulative revenue growth.
+
+Method:
+
+Running total created using cumulative sum.
+
+Output:
+
+running_revenue.csv
+
+Business Insight:
+
+Running revenue illustrates long-term business growth.
+
+Conclusion:
+
+Running revenue successfully calculated.
+________
+
+ANALYSIS 5 – Running Revenue
+Objective:
+
+Track cumulative revenue growth over time.
+
+Method:
+
+Monthly revenue was aggregated and a cumulative sum was applied to calculate running revenue.
+
+Output:
+Dataset/running_revenue.csv
+Results:
+
+The running revenue increased continuously throughout the business period.
+
+Sample Results:
+
+Dec 2009 = 683,504.01
+
+Jan 2010 = 1,239,306.68
+
+Feb 2010 = 1,743,865.64
+
+Mar 2010 = 2,440,844.11
+
+Apr 2010 = 3,032,826.11
+
+Interpretation:
+
+Running revenue provides a cumulative view of business growth over time.
+
+Business Insight:
+
+Steady increases in running revenue indicate business expansion and customer retention.
+
+Conclusion:
+
+Running revenue successfully calculated
+
+________________________________________________________________________________
+
+ANALYSIS 6 – Top Customers by Country
+Objective:
+
+Identify the highest revenue customers within each country.
+
+Method:
+
+SQL RANK() window function was used with PARTITION BY Country.
+
+Output:
+Dataset/country_customer_rank.csv
+Interpretation:
+
+Customers were ranked independently within each country.
+
+Business Insight:
+
+Businesses can identify country-specific VIP customers.
+
+Conclusion:
+
+Country-level customer ranking successfully completed.
+
+_________________________________________________________________________________
+
+ANALYSIS 7 – Revenue Contribution Analysis
+Objective:
+
+Determine the percentage contribution of each country to total business revenue.
+
+Method:
+
+Country revenue was divided by total revenue and multiplied by 100.
+
+Formula:
+Contribution % =
+(Country Revenue / Total Revenue) × 100
+Output:
+Dataset/country_contribution.csv
+Results:
+
+United Kingdom = 82.82%
+
+EIRE = 3.55%
+
+Netherlands = 3.19%
+
+Germany = 2.45%
+
+France = 2.01%
+
+Interpretation:
+
+The United Kingdom contributes the majority of business revenue.
+
+All other countries contribute significantly smaller portions.
+
+Business Insight:
+
+The business is highly dependent on the United Kingdom market.
+
+Geographic diversification may reduce business risk.
+
+Conclusion:
+
+Revenue contribution analysis completed successfully.
+
+____________________________________________________
+
+
+ANALYSIS 8 – Customer Segmentation
+
+Objective:
+
+Classify customers into meaningful business segments based on their purchasing behavior using RFM Analysis.
+
+Method:
+
+Customers were segmented using Recency, Frequency, and Monetary scores.
+
+Segmentation Rules:
+
+VIP Customers:
+
+R_Score >= 4
+
+F_Score >= 4
+
+M_Score >= 4
+
+At Risk Customers:
+
+R_Score <= 2
+
+Frequency greater than median frequency
+
+Regular Customers:
+
+All remaining customers
+
+Results:
+
+VIP Customers = 60
+
+At Risk Customers = 2,519
+
+Regular Customers = 3,299
+
+Total Customers = 5,878
+
+Interpretation:
+
+The majority of customers belong to the Regular segment.
+
+A significant number of customers are classified as At Risk, indicating potential customer churn.
+
+Only a small percentage of customers qualify as VIP customers.
+
+VIP Percentage:
+
+(60 / 5,878) × 100
+
+= 1.02%
+
+Business Insight:
+
+VIP customers represent only 1.02% of the customer base but are likely responsible for a significant portion of business revenue.
+
+At Risk customers represent customers who were previously active but may stop purchasing if retention efforts are not implemented.
+
+Regular customers provide opportunities for future growth and conversion into higher-value segments.
+
+Business Recommendation:
+
+Implement loyalty programs for VIP customers.
+
+Launch retention campaigns for At Risk customers.
+
+Use targeted promotions to encourage Regular customers to increase purchase frequency and spending.
+
+Conclusion:
+
+RFM Analysis successfully segmented customers into actionable business groups and provided valuable insights for customer retention, marketing strategy, and revenue growth initiatives.
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+ANALYSIS 9 – Business Insights
+
+Objective:
+
+Summarize business insights derived from Advanced SQL Analytics.
+
+Method:
+
+Insights were generated from customer rankings, product rankings, country rankings, running revenue analysis, and revenue contribution analysis.
+
+Key Findings:
+
+Total Revenue = 17.37 Million
+
+Highest Revenue Customer = 18102
+
+Highest Revenue Product = REGENCY CAKESTAND 3 TIER
+
+Highest Revenue Country = United Kingdom
+
+Revenue Contribution = 82.82%
+
+Interpretation:
+
+Revenue is concentrated among a small number of customers, products, and countries.
+
+Business Insight:
+
+Customer retention, product optimization, and geographic diversification represent major opportunities for growth.
+
+Business Recommendations:
+
+1. Strengthen VIP customer retention.
+
+2. Prioritize top-performing products.
+
+3. Expand beyond the United Kingdom market.
+
+4. Continue monitoring revenue trends.
+
+Conclusion:
+
+Advanced SQL Analytics generated actionable business insights for strategic decision-making.
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+ANALYSIS 10 – Final SQL Summary
+
+Objective:
+
+Summarize all findings from Advanced SQL Analytics and consolidate the key business metrics.
+
+Method:
+
+Key metrics and outputs from customer, product, country, and revenue analyses were combined into a final SQL summary.
+
+Output:
+
+Dataset/sql_summary.csv
+
+Key Metrics:
+
+Total Revenue = 17.37 Million
+
+Total Customers = 5,878
+
+Total Products = 5,283
+
+Top Revenue Country = United Kingdom
+
+Top Country Contribution = 82.82%
+
+Highest Revenue Customer = Customer 18102
+
+Highest Revenue Product = REGENCY CAKESTAND 3 TIER
+
+Interpretation:
+
+Advanced SQL Analytics successfully identified the major revenue drivers across customers, products, countries, and revenue growth trends.
+
+Business Insights:
+
+The United Kingdom is the dominant market, contributing more than 82% of total revenue.
+
+A small number of customers contribute a significant portion of business revenue.
+
+A small number of products generate substantial revenue.
+
+Running revenue analysis indicates sustained business growth.
+
+Skills Demonstrated:
+
+SQL Window Functions
+
+RANK()
+
+PARTITION BY
+
+Revenue Analysis
+
+Customer Ranking
+
+Product Ranking
+
+Country Ranking
+
+Business Intelligence
+
+Data Visualization
+
+Business Reporting
+
+Deliverables Generated:
+
+customer_rankings.csv
+
+product_rankings.csv
+
+country_rankings.csv
+
+running_revenue.csv
+
+country_customer_rank.csv
+
+country_contribution.csv
+
+sql_summary.csv
+
+customer_ranking.png
+
+product_ranking.png
+
+country_ranking.png
+
+running_revenue.png
+
+Conclusion:
+
+Advanced SQL Analytics successfully identified revenue drivers, customer behavior patterns, product performance, geographic market contributions, and long-term revenue growth trends. The analysis provides actionable insights for customer retention, product optimization, and market expansion strategies.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

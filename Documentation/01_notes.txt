@@ -1,0 +1,15 @@
+Invoice = Order Number
+
+StockCode = Product ID
+
+Description = Product Name
+
+Quantity = Number of Items Sold
+
+InvoiceDate = Purchase Date
+
+Price = Product Price
+
+Customer ID = Customer Identifier
+
+Country = Customer Country

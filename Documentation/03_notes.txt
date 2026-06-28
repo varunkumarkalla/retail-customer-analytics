@@ -1,0 +1,115 @@
+ANALYSIS 1: 
+
+Total Revenue Analysis
+
+Objective:
+
+Determine total revenue generated.
+
+Method: Sum of Revenue column.
+
+Formula: Revenue = Quantity × Price
+
+Result: ₹ 17374804.268/-
+
+Business Insight:
+This represents total sales generated during the observed period.
+________________________________________
+
+ANALYSIS 2:
+Customer Analysis
+
+Unique Customers: 5878
+
+Insight:
+
+Represents total customer base.
+
+________________________________________
+ANALYSIS 3:
+total products
+How many products were sold:4631
+
+________________________________________
+ANALYSIS 4:
+top 10 products 
+Which products generate maximum revenue:
+
+Description 
+best selling products top 10:
+
+REGENCY CAKESTAND 3 TIER       
+277656.25
+WHITE HANGING HEART T-LIGHT HOLDER 247048.01
+PAPER CRAFT , LITTLE BIRDIE           168469.60
+Manual                                151777.67
+JUMBO BAG RED RETROSPOT               134307.44
+POSTAGE                               124648.04
+ASSORTED COLOUR BIRD ORNAMENT         124351.86
+PARTY BUNTING                         103283.38
+MEDIUM CERAMIC TOP STORAGE JAR         81416.73
+PAPER CHAIN KIT 50'S CHRISTMAS         76598.18
+________________________________________
+
+Top Product Analysis
+
+Objective:
+
+Identify products contributing maximum revenue.
+
+Method:
+
+Grouped by Description and summed Revenue.
+
+Finding:
+
+Top 10 products contribute the highest share of revenue.
+
+Business Benefit:
+
+Helps inventory planning and marketing campaigns.
+________________________________________
+
+ANALYSIS 5:
+TOP CUSTOMERS 
+
+Who are the most valuable customers:
+
+Top Customer Analysis
+
+Objective:
+Identify customers generating the highest revenue.
+
+Method:
+Grouped transactions by Customer ID and calculated total revenue.
+
+Result:
+Top 10 customers were identified based on cumulative revenue contribution.
+
+Business Benefit:
+These customers can be targeted for loyalty programs, retention campaigns, premium services, and personalized marketing.
+
+Output File:
+top_customers.png
+________________________________________
+
+Analysis 6 — Country Revenue
+
+Country Revenue Analysis
+
+Objective:
+Identify countries contributing the highest revenue.
+
+Method:
+Grouped transactions by Country and summed Revenue.
+
+Result:
+Top revenue-generating countries were identified.
+
+Business Benefit:
+Supports international business expansion and region-specific marketing strategies.
+
+Output File:
+top_countries.png
+________________________________________
+

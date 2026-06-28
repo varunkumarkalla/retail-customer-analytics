@@ -1,0 +1,347 @@
+ANALYSIS 1: LOAD DATASET
+Business Question:
+ Which dataset will be used: 
+_____________________________________________________________________________________________________________________________________
+
+ANALYSIS 2: Normality Test
+ Business Question:
+Does Revenue follow a normal distribution?
+
+Objective: Determine whether Revenue follows a normal distribution.
+
+Method: Shapiro-Wilk Test
+
+Null Hypothesis (H0): Revenue follows a normal distribution.
+
+Alternative Hypothesis (H1): Revenue does not follow a normal distribution.
+
+Results:
+
+Statistic = 0.239956
+
+P-value = 1.8255e-89
+
+Decision: Reject Null Hypothesis
+
+Interpretation:  The P-value is significantly smaller than the significance level of 0.05.
+
+Therefore, Revenue does not follow a normal distribution.
+
+Business Insight: Customer spending is highly uneven. Most transactions are relatively small, while a small number of transactions contribute exceptionally high revenue.
+
+Impact on Future Analysis: Because Revenue is not normally distributed, non-parametric statistical tests such as the Mann-Whitney U Test should be considered alongside traditional parametric tests.
+_____________________________________________________________________________________________________________________________________
+
+ANALYSIS 3: VARIANCE TEST
+Business Question:
+Do UK and Germany customers
+have equal variance: Variance Equality Test
+
+Objective: Determine whether revenue variance differs between United Kingdom and Germany customers.
+
+Method: Levene Test
+
+Null Hypothesis (H0): Revenue variance is equal across both countries.
+
+Alternative Hypothesis (H1): Revenue variance differs across countries.
+
+Results:
+
+Statistic = 1.199894
+
+P-value = 0.273343
+
+Decision: Fail to Reject Null Hypothesis
+
+Interpretation: The p-value is greater than 0.05.
+
+Therefore, there is insufficient evidence to conclude that revenue variability differs between the United Kingdom and Germany.
+
+Business Insight:
+
+Customer spending variation appears statistically similar in both countries.
+
+Conclusion:
+
+Equal variance assumption is satisfied.
+__________________________________________________________________________________________________________________________
+ANALYSIS 4 : T-TEST
+
+Business Question:
+Do UK and Germany customers
+spend differently: Independent T-Test
+
+Objective :
+
+Determine whether customer spending differs significantly between customers from the United Kingdom and Germany.
+
+Business Question :
+
+Do customers from the United Kingdom and Germany spend the same amount on average, or is there a statistically significant difference in their purchasing behavior?
+
+Method :
+
+Independent Two-Sample T-Test
+
+Groups Compared
+
+1. United Kingdom Customers
+
+2. Germany Customers
+
+Null Hypothesis (H0) :
+
+Mean customer revenue in the United Kingdom is equal to mean customer revenue in Germany.
+
+Alternative Hypothesis (H1) :
+
+Mean customer revenue in the United Kingdom is not equal to mean customer revenue in Germany.
+
+Results :
+
+Test Statistic = -13.5180
+
+P-value = 1.3819e-41
+
+Decision :
+
+Reject Null Hypothesis (H0)
+
+Reason :
+
+The obtained p-value is significantly smaller than the significance level of 0.05.
+
+Therefore, there is strong statistical evidence that average customer spending differs between the United Kingdom and Germany.
+
+Average Revenue Comparison :
+
+United Kingdom Mean Revenue = 20.54
+
+Germany Mean Revenue = 25.87
+
+Difference = 5.32
+
+Interpretation :
+
+Germany customers spend significantly more per transaction than customers from the United Kingdom.
+
+The observed difference is statistically significant and is highly unlikely to have occurred due to random chance.
+
+The negative test statistic indicates that the average revenue of the United Kingdom group is lower than the average revenue of the Germany group.
+
+Business Insight :
+
+Customer purchasing behavior varies significantly across countries.
+
+Country appears to be an important factor influencing customer spending patterns and overall revenue generation.
+
+This finding suggests that customer behavior cannot be assumed to be identical across different geographical markets.
+
+Business Recommendation :
+
+Country-specific pricing strategies, promotional campaigns, loyalty programs, and customer engagement initiatives should be considered.
+
+Germany represents a higher-value customer segment based on average transaction revenue and may justify increased marketing investment and customer retention efforts.
+
+Visualization :
+
+uk_vs_germany.png
+
+Conclusion :
+
+The Independent T-Test confirmed that customer spending behavior differs significantly between the United Kingdom and Germany.
+
+Germany customers generate higher average transaction revenue than customers from the United Kingdom, making country-level segmentation an important consideration for future business decisions and marketing strategies.
+____________________________________________________________________________________________________________________________________
+
+ANALYSIS 5 : ANOVA Test
+
+Objective: Determine whether average customer revenue differs across multiple countries.
+
+Business Question: Do customers from the United Kingdom, Germany, and France spend the same amount on average?
+
+Method:
+
+One-Way ANOVA (Analysis of Variance)
+
+Countries Compared
+
+1. United Kingdom
+
+2. Germany
+
+3. France
+
+Null Hypothesis (H0):
+
+Average customer revenue is equal across all countries.
+
+Alternative Hypothesis (H1):
+
+At least one country has a different average customer revenue.
+
+Results :
+
+Test Statistic = 7.4158
+
+P-value = 0.0006017
+
+Decision :
+
+Reject Null Hypothesis
+
+Interpretation :
+
+The p-value is significantly smaller than the significance level of 0.05.
+
+Therefore, there is sufficient statistical evidence to conclude that average customer revenue differs across the countries analyzed.
+
+Business Insight :
+
+Customer purchasing behavior is not identical across geographical markets.
+
+Country-level differences influence spending patterns and revenue generation.
+
+This supports the need for localized marketing, pricing, and customer engagement strategies.
+
+Conclusion :
+
+At least one country's average customer revenue differs significantly from the others.
+
+Country should be considered an important factor in customer analytics and business decision-making.
+____________________________________________________________________________________________________________________________________
+
+ANALYSIS 6: Chi-Square Test of Independence
+
+Objective :
+
+Determine whether Country and Month are associated.
+
+Business Question :
+
+Does purchasing behavior vary across countries and months?
+
+Method :
+
+Chi-Square Test of Independence
+
+Variables Analyzed
+
+1. Country
+
+2. Month
+
+Null Hypothesis (H0) :
+
+Country and Month are independent.
+
+There is no association between Country and Month.
+
+Alternative Hypothesis (H1) :
+
+Country and Month are associated.
+
+There is a relationship between Country and Month.
+
+Results :
+
+Chi-Square Statistic = 22755.0491
+
+P-value = 0.0
+
+Degrees of Freedom = 440
+
+Decision :
+
+Reject Null Hypothesis
+
+Interpretation :
+
+The p-value is significantly smaller than the significance level of 0.05.
+
+Therefore, there is strong statistical evidence that Country and Month are associated.
+
+Business Insight :
+
+Customer purchasing behavior varies across geographical markets and time periods.
+
+Different countries exhibit different purchasing patterns throughout the year.
+
+This indicates that seasonality and customer demand are influenced by geographical location.
+
+Business Recommendation :
+
+Marketing campaigns, inventory planning, and promotional strategies should be customized for different countries and seasons rather than applying a single global strategy.
+
+Conclusion :
+
+Country and Month are not independent.
+
+Geographical location plays an important role in determining monthly purchasing behavior.
+_____________________________________________________________________________________________________________________________________
+
+ANALYSIS 7: Mann-Whitney U Test
+
+Objective :
+
+Determine whether customer spending differs between the United Kingdom and Germany without assuming normal distribution.
+
+Business Question :
+
+Do customers from the United Kingdom and Germany exhibit different spending behavior?
+
+Method :
+
+Mann-Whitney U Test
+
+Reason for Using This Test :
+
+The Shapiro-Wilk Test indicated that Revenue does not follow a normal distribution.
+
+Therefore, a non-parametric test was required.
+
+Groups Compared
+
+1. United Kingdom Customers
+
+2. Germany Customers
+
+Null Hypothesis (H0) :
+
+The revenue distributions of the United Kingdom and Germany are the same.
+
+Alternative Hypothesis (H1) :
+
+The revenue distributions of the United Kingdom and Germany differ.
+
+Results :
+
+Test Statistic = 3543237526.0
+
+P-value = 0.0
+
+Decision :
+
+Reject Null Hypothesis
+
+Interpretation :
+
+The p-value is significantly smaller than the significance level of 0.05.
+
+Therefore, there is strong statistical evidence that customer spending behavior differs between the United Kingdom and Germany.
+
+Business Insight :
+
+Customers from different countries exhibit different spending patterns.
+
+Country-specific strategies should be considered when designing marketing campaigns and customer engagement programs.
+
+Conclusion :
+
+The Mann-Whitney U Test confirms the findings obtained from the Independent T-Test.
+
+Customer spending behavior differs significantly between the United Kingdom and Germany.
+
+_____________________________________________________________________________________________________________________________________
+
+
